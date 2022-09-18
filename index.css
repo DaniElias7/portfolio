@@ -75,6 +75,7 @@ nav ul li a:hover {
 }
 nav ul li a span {
     margin: 0;
+    padding-left: .25rem;
 }
 main {
     margin : 53px 0 0 0;
@@ -138,33 +139,74 @@ main {
 
 /* Expertise */
 #expertise {
-    display: flex;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('./img/general/code.png');
-
-     /* Set a specific height */
+    margin: 0 auto;
     height: 85vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.925), rgba(0, 0, 0, 0.925)), url('./img/general/code.png');
 
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+#expertise-title {
+    height: 0;
+    font-size: 4rem;
+    text-align: center;
+}
+#expertise-areas {
+    display: flex;
+}
 .expertise-area {
+    border: .1px solid rgb(230, 230, 230);
+    padding: 2.5rem 2rem 0 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     flex: 1;
 }
 .expertise-area-title, .expertise-area-content {
     display: flex;
+    flex-direction: row;
+}
+.expertise-area-title {
+    justify-content: center;
+    align-items: center;
+}
+.expertise-area-title h2 {
+    margin: 0;
+}
+.expertise-area-title-h2-1 {
+    border-bottom: 3px solid rgb(255, 183, 0);
+}
+.expertise-area-title-h2-2 {
+    border-bottom: 3px solid rgb(193, 0, 161);
+}
+.expertise-area-title-h2-3 {
+    border-bottom: 3px solid var(--base-color);
+}
+.expertise-area-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.expertise-area-content div {
+    height: 90%;
+    color: gray;
+}
+.expertise-area-content p {
+    padding-top: 1rem;
+    letter-spacing: 1.5px;
+    line-height: 1.5rem;
+    color: rgb(220, 220, 220);
+}
+.horizontal-line {
+    width: 1px;
+    height: 70%;
+    background-color: gray;
 }
 
 /* Projects */
-pre {
-    color: #fff;
-}
-
 #projects {
     margin-bottom: 0;
     padding: .5em 1em;
@@ -201,7 +243,7 @@ section {
     padding: 0;
     width: 400%;
     display: flex;
-    animation: cambio 25s infinite alternate ease-in-out;
+    animation: cambio 50s infinite alternate ease-in-out;
 }
 .slider ul li {
 	width: 100%;
