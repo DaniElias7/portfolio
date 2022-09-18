@@ -1,13 +1,15 @@
 :root {
     --base-color: rgb(0, 170, 255);
-    --secondary-color-one: rgb(0, 144, 89);
+    --secondary-color-one: rgb(0, 77, 144);
     --secondary-color-two: #abbdd7;
+    --dark-blue: rgb(0, 23, 52);
 }
 body {
     margin: 0;
     font-family: Arial;
     overflow-x: hidden;
     background-color: #000;
+    color: #FFF;
 }
 .container {
     margin: 0 auto;
@@ -15,8 +17,8 @@ body {
 }
 #header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: flex-start;
     width: 100%;
     position: fixed;
     top: 0;
@@ -26,21 +28,24 @@ body {
 }
 #coder {
     margin-left: 1rem;
-    padding: 1rem auto;
-    background-color: rgb(30, 30, 30);
+    padding: 1rem auto auto auto;
+    padding-right: 2rem;
+    flex: 1;
     height: 100%;
     color: rgb(255, 255, 255);
+    text-align: end;
 }
 h3 {
     margin: auto 1em 0 1rem;
-    border-bottom: .5px solid blue;
+    border-bottom: .5px solid var(--base-color);
     border-radius: 3px;
     padding: .5em;
-    color: var(--base-color);
+    color: #FFF;
     text-align: center;
 }
 nav {
-    width: 100%x;
+    flex: 3;
+    align-self: flex-start;
     height: 3.7em;
 }
 nav ul {
@@ -48,27 +53,28 @@ nav ul {
     padding: 0 1em;
     display: flex;
     justify-content: flex-start;
+    list-style: none;
 }
 nav li {
     padding: 0 1rem;
 }
-nav li i {
-    color: #FFF;
-    height: 100%;
-}
-nav li a {
+nav ul li a {
     margin: 0;
-    list-style: none;
+    padding: 0 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
+    list-style: none;
     text-decoration: none;
     color: #fff;
 }
-nav li a:hover {
-    background-color: rgb(0, 34, 70)
+nav ul li a:hover {
+    background-color: var(--secondary-color-one);
+}
+nav ul li a span {
+    margin: 0;
 }
 main {
     margin : 53px 0 0 0;
@@ -85,15 +91,20 @@ main {
     flex-direction: column;
     width: 100vw;
     height: 35em;
+    letter-spacing: 2px;
 }
 #main-h1 {
     margin-top: 0;
-    font-size: 2.8rem;
+    font-size: 7rem;
     text-align: center;
     color: lightgray;
 }
 #main-intro h1 strong {
     color: var(--secondary-color-two);
+}
+#main-intro p {
+    padding-bottom: 0;
+    font-weight: bold;
 }
 #main-intro p {
     margin: 0 .3em;
@@ -102,54 +113,71 @@ main {
     text-align: center;
     color: lightgray;
 }
-#main-intro span {
-    background-color: rgb( 30, 30, 30 );
-}
 #cv-card {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-.cv {
-    padding: .5em;
-    background: rgb(100, 100, 100, .7);
-    display: inline;
-    cursor: pointer;
-}
-.cv:hover {
-    border-bottom: .1px solid #FFF;
-}
 #main-intro button {
     margin: 1.5em auto;
     border: none;
     border-radius: 6px;
-    padding: 1em;
+    padding: 1rem 2rem;
     font-size: 1.15rem;
     background-color: var(--secondary-color-one);
-    color: #fff;
     cursor: pointer;
+}
+#main-intro button:hover {
+    background: var(--dark-blue);
 }
 #main-intro a {
     text-decoration: none;
     color: #FFF;
 }
+
+/* Expertise */
+#expertise {
+    display: flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('./img/general/code.png');
+
+     /* Set a specific height */
+    height: 85vh;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.expertise-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.expertise-area-title, .expertise-area-content {
+    display: flex;
+}
+
+/* Projects */
+pre {
+    color: #fff;
+}
+
 #projects {
     margin-bottom: 0;
     padding: .5em 1em;
     text-align: center;
     letter-spacing: 1.5px;
     font-size: 3rem;
-    color: #FFF;
 }
 section {
     padding: 2em 0;
-    background-color: rgb(15, 15, 15);
-    background-image: linear-gradient( 110.3deg,  rgb(11, 18, 23) 4.3%, rgb(0, 0, 0) 96.7% );
 }
 .single-project {
     border-radius: 6px;
-    background-color: rgb(24, 31, 41);
+    background-color: rgb(15, 15, 15);
 }
 #go-up-button {
     display: none;
@@ -193,12 +221,8 @@ footer a {
     color: #FFF;
     text-decoration: none;
 }
-footer i {
-    color: #FFF;
-}
 address p {
     text-align: center;
-    color: #FFF;
 }
 
 /* Animations */
@@ -272,9 +296,6 @@ address p {
     nav ul li {
         margin: 0 .25em;
     }
-    #main-intro-container {
-	    background: #181818;
-    }
     #main-intro {
 	    margin-top: 1em;
         height: 40em;
@@ -298,7 +319,6 @@ address p {
     footer address {
         margin: auto;
         padding: 1em 0;
-        color: #FFF;
     }
     .contact-box {
         display: flex;
@@ -357,12 +377,9 @@ address p {
         background-repeat: no-repeat;
     }
     #main-intro {
-	margin-top: 0;
+	    margin-top: 0;
         height: 25em;
-	background: rgb(0, 0, 0, .6);
-    }
-    #main-h1 {
-        margin: 1.5em 0;
+	    background: rgb(0, 0, 0, .6);
     }
     #main-intro p {
         margin: 0 2em;
@@ -398,8 +415,7 @@ address p {
         height: 45rem;
     }
     #main-h1 {
-	margin-bottom: .5em;
-         font-size: 4rem;
+	    margin-bottom: .25em;
     }
     #main-intro p {
          font-size: 1.5rem;
