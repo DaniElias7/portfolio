@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RdgzLpz/port.git"
+    "url": "git+https://github.com/DaniElias7/portfolio.git"
   },
   "keywords": [],
   "author": "Oscar Rodríguez",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/RdgzLpz/port/issues"
+    "url": "https://github.com/DaniElias7/portfolio/issues"
   },
-  "homepage": "https://github.com/RdgzLpz/port#readme"
+  "homepage": "https://github.com/DaniElias7/portfolio#readme"
 }
