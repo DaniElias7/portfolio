@@ -11,6 +11,10 @@ body {
     background-color: #000;
     color: #FFF;
 }
+.root {
+    display: flex;
+    flex-direction: column;
+}
 .container {
     margin: 0 auto;
     max-width: 1280px;
