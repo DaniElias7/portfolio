@@ -3,39 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="rgb(4, 226, 255)">
+    <meta name="theme-color" content="rgb(30, 30, 30)">
     <title>Oscar Rodríguez</title>
     <link rel="shortcut icon" href="./favicon/icon.jpeg" type="image/x-icon" size="32x32">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="./styles/class.css">
     <script src="https://kit.fontawesome.com/e029fa9463.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container root">
-        <header id="header" class="container"> 
-            <nav>
+    <div class="container root flex">
+        <header id="header" class="flex justify-c-center align-i-center"> 
+            <nav class="flex justify-c-center align-i-center">
                 <i id="menu"  class="fa fa-bars fa-2x"></i>
-                <ul>
+                <ul class="flex">
                     <li>
-                        <a href="#home" class="no-the-last  first-navbar">
+                        <a class="flex align-i-center" href="#home" class="no-the-last  first-navbar">
                             <i class="fa fa-id-card"></i>
                             <span class="nav-span" translate="no">Home</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#expertise" class="no-the-last  first-navbar">
+                        <a class="flex align-i-center" href="#expertise" class="no-the-last  first-navbar">
                             <i class="fa fa-brain"></i>
                             <span class="nav-span" translate="no">Abilities</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#projects" class="no-the-last first-navbar">
+                        <a class="flex align-i-center" href="#projects" class="no-the-last first-navbar">
                             <i class="fa fa-code"></i>
                             <span class="nav-span" translate="no">Projects</span>
                         </a>
                     </li>
                     <li>
-                        <a href="#contact" class="first-navbar">
+                        <a class="flex align-i-center" href="#contact" class="first-navbar">
                             <i class="fa fa-user-circle"></i>
                             <span class="nav-span" translate="no">Contact</span>
                         </a>
@@ -46,27 +45,25 @@
         </header>    
 	<!--  Personal information about my services -->
         <main id="home">
-            <section id="main-intro-container">
-                <div id="main-intro">
-                    <h1 id="main-h1">Oscar Rodríguez</h1>
-                    <p>SOFTWARE DEVELOPER.</p>
-		            <button>    
-                        <a href="#contact">Contact me</a>
-                    </button>
-                </div>
+            <section id="main-intro" class="container flex flex-d-column align-i-center justify-c-center">
+                <h1 id="main-h1">Oscar Rodríguez</h1>
+                <p>SOFTWARE DEVELOPER.</p>
+		        <button>    
+                    <a href="#contact">Contact me</a>
+                </button>
             </section>
             <!-- My expertise --> 
             <section id="expertise" class="container">
                 <div>
                     <h1 id="expertise-title">My Expertise</h1>
                 </div>
-                <div id="expertise-areas">
-                    <div class="expertise-area">
-                        <div class="expertise-area-title">
+                <div id="expertise-areas" class="flex justify-c-center">
+                    <div class="expertise-area flex flex-d-column justify-c-center align-i-center">
+                        <div class="expertise-area-title-1 flex justify-c-center">
                             <i class="fa fa-laptop-code fa-2x"></i>
                             <h2 class="expertise-area-title-h2-1">Software Development</h2>
                         </div>
-                        <div class="expertise-area-content">
+                        <div class="expertise-area-content flex justify-c-center align-i-center">
                             <div>
                                 <span>&lth3&gt</span>
                                 <div class="horizontal-line"></div>
@@ -77,12 +74,12 @@
                             </p>
                         </div>
                     </div>
-                    <div class="expertise-area">
-                        <div class="expertise-area-title">
+                    <div class="expertise-area flex flex-d-column justify-c-center align-i-center">
+                        <div class="expertise-area-title-2 flex justify-c-center">
                             <img id="frontend-dev-icon" src="./icons/design-icon.svg" alt="frontend-dev-icon">
                             <h2 class="expertise-area-title-h2-2">Frontend Dev</h2>
                         </div>
-                        <div class="expertise-area-content">
+                        <div class="expertise-area-content flex justify-c-center align-i-center">
                             <div>
                                 <span>&lth3&gt</span>
                                 <div class="horizontal-line"></div>
@@ -93,12 +90,12 @@
                             </p>
                         </div>
                     </div>
-                    <div class="expertise-area">
-                        <div class="expertise-area-title">
+                    <div class="expertise-area flex flex-d-column justify-c-center align-i-center">
+                        <div class="expertise-area-title-3 flex justify-c-center  align-i-center">
                             <i class="fa fa-server fa-2x"></i>
                             <h2 class="expertise-area-title-h2-3">Backend Dev</h2>
                         </div>
-                        <div class="expertise-area-content">
+                        <div class="expertise-area-content flex justify-c-center">
                             <div>
                                 <span>&lth3&gt</span>
                                 <div class="horizontal-line"></div>
@@ -122,7 +119,7 @@
                     <h3><span>Calculator</span></h3>
                     <div class="single-project-image-container">
 			            <div class="slider">
-                                <ul>
+                                <ul class="flex">
                                     <li>
 	                                <a href="https://danielias7.github.io/calculator"><img src="./img/calculator/calculator-1.png" alt="project"></a>
 	                            </li>
@@ -143,18 +140,18 @@
                     <h3><span>Product landing page</span></h3>
                     <div class="single-project-image-container">
 			            <div class="slider">
-                            <ul>
+                            <ul class="flex justify-c-center">
                                 <li>
-	                                <a href="https://danielias7.github.io/product-landing-page"><img src="./img/product-landing-page/plp-1.png" alt="project"></a>
+	                                <a class="justify-c-center" href="https://danielias7.github.io/product-landing-page"><img src="./img/product-landing-page/plp-1.png" alt="project"></a>
 	                            </li>
                                     <li>
-	                                <a href="https://danielias7.github.io/product-landing-page"><img src="./img/product-landing-page/plp-2.png" alt="project"></a>
+	                                <a class="justify-c-center" href="https://danielias7.github.io/product-landing-page"><img src="./img/product-landing-page/plp-2.png" alt="project"></a>
 	                            </li>
                                     <li>
-	                                <a href="https://danielias7.github.io/product-landing-page"><img src="./img/product-landing-page/plp-3.png" alt="project"></a>
+	                                <a class="justify-c-center" href="https://danielias7.github.io/product-landing-page"><img src="./img/product-landing-page/plp-3.png" alt="project"></a>
 	                            </li>
                                     <li>
-	                                <a href="https://danielias7.github.io/product-landing-page"><img src="./img/product-landing-page/plp-4.png" alt="project"></a>
+	                                <a class="justify-c-center" href="https://danielias7.github.io/product-landing-page"><img src="./img/product-landing-page/plp-4.png" alt="project"></a>
 	                            </li>
                             </ul>
                         </div>
@@ -163,25 +160,25 @@
                 <div class="single-project">
                     <h3><span>Palindrome checker</span></h3>
                      <div class="single-project-image-container">
-			    <div class="slider">
-                                <ul>
+			                <div class="slider">
+                                <ul class="flex"l>
                                     <li>
-                                        <a href="https://www.danielias7.github.io/Palindrome-checker">
+                                        <a class="justify-c-center" href="https://www.danielias7.github.io/Palindrome-checker">
                                             <img src="./img/palindrome-checker/palindrome-checker-1.png" alt="project">
                                         </a>
 	                                 </li>
                                     <li>
-                                      <a href="https://www.danielias7.github.io/Palindrome-checker">
+                                      <a class="justify-c-center" href="https://www.danielias7.github.io/Palindrome-checker">
                                         <img src="./img/palindrome-checker/palindrome-checker-2.png" alt="project">
                                     </a>
 	                                </li>
                                     <li>
-                                       <a href="https://www.danielias7.github.io/Palindrome-checker">
+                                       <a class="justify-c-center" href="https://www.danielias7.github.io/Palindrome-checker">
                                             <img src="./img/palindrome-checker/palindrome-checker-3.png" alt="project">
                                         </a>
 	                                 </li>
                                     <li>
-                                       <a href="https://www.danielias7.github.io/Palindrome-checker">
+                                       <a class="justify-c-center" href="https://www.danielias7.github.io/Palindrome-checker">
                                             <img src="./img/palindrome-checker/palindrome-checker-4.png" alt="project">
                                         </a>
 	                                </li>
@@ -193,18 +190,18 @@
                    <h3><span>JS technical documentation</span></h3>
                    <div class="single-project-image-container">
                         <div class="slider">
-                            <ul>
+                            <ul class="flex">
                                 <li>
-                                    <a href="https://danielias7.github.io/js-technical-documentation"><img src="./img/js-technical-doc/jstecdoc-1.png" alt="project"></a>
+                                    <a class="justify-c-center" href="https://danielias7.github.io/js-technical-documentation"><img src="./img/js-technical-doc/jstecdoc-1.png" alt="project"></a>
                                 </li>
                                 <li>
-                                    <a href="https://danielias7.github.io/js-technical-documentation"><img src="./img/js-technical-doc/jstecdoc-2.png" alt="project"></a>
+                                    <a class="justify-c-center" href="https://danielias7.github.io/js-technical-documentation"><img src="./img/js-technical-doc/jstecdoc-2.png" alt="project"></a>
                                 </li>
                                 <li>
-                                    <a href="https://danielias7.github.io/js-technical-documentation"><img src="./img/js-technical-doc/jstecdoc-3.png" alt="project"></a>
+                                    <a class="justify-c-center" href="https://danielias7.github.io/js-technical-documentation"><img src="./img/js-technical-doc/jstecdoc-3.png" alt="project"></a>
                                 </li>
                                 <li>
-                                     <a href="https://danielias7.github.io/js-technical-documentation"><img src="./img/js-technical-doc/jstecdoc-4.png" alt="project"></a>
+                                     <a class="justify-c-center" href="https://danielias7.github.io/js-technical-documentation"><img src="./img/js-technical-doc/jstecdoc-4.png" alt="project"></a>
                                 </li>
                            </ul>
                         </div>
@@ -214,24 +211,24 @@
                     <h3><span>Bar chart</span></h3>
                     <div class="single-project-image-container">
 			            <div class="slider">
-                            <ul>
+                            <ul class="flex">
                                 <li>
-                                    <a href="https://danielias7.github.io/bar-chart">
+                                    <a class="justify-c-center" href="https://danielias7.github.io/bar-chart">
                                         <img src="./img/bar-chart/bar-chart-1.png" alt="project">
                                     </a>
 	                            </li>
                                     <li>
-                                    <a href="https://danielias7.github.io/bar-chart">
+                                    <a class="justify-c-center" href="https://danielias7.github.io/bar-chart">
                                         <img src="./img/bar-chart/bar-chart-2.png" alt="project">
                                     </a>
 	                            </li>
                                     <li>
-                                    <a href="https://danielias7.github.io/bar-chart">
+                                    <a class="justify-c-center" href="https://danielias7.github.io/bar-chart">
                                         <img src="./img/bar-chart/bar-chart-3.png" alt="project">
                                     </a>
 	                            </li>
                                     <li>
-                                    <a href="https://danielias7.github.io/bar-chart">
+                                    <a class="justify-c-center" href="https://danielias7.github.io/bar-chart">
                                         <img src="./img/bar-chart/bar-chart-4.png" alt="project">
                                     </a>
 	                            </li>
@@ -242,8 +239,8 @@
             </section>
         </main>    
         <footer>
-            <address id="contact">
-                <div class="networks">
+            <address id="contact" class="flex-d-column">
+                <div class="networks flex">
                     <a href="https://www.github.com/DaniElias7" target="_blank"  class="contact-box">
                         <i class="fa fa-github fa-2x"></i>
                         <p>GitHub</p>
@@ -252,7 +249,7 @@
                         <i class="fa fa-linkedin fa-2x"></i>
                         <p>LinkedIn</p>
                     </a>
-                    <div class="contact-box">
+                    <div class="contact-box ">
                         <i class="fa fa-whatsapp fa-2x"></i>
                         <p>+55 95 9811 216 89</p>
                     </div>

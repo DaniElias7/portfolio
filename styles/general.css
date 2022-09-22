@@ -1,0 +1,258 @@
+:root {
+    --base-color: rgb(0, 170, 255);
+    --secondary-color-one: rgb(0, 77, 144);
+    --secondary-color-two: #abbdd7;
+    --dark-blue: rgb(0, 23, 52);
+}
+body {
+    margin: 0;
+    font-family: Arial;
+    overflow-x: hidden;
+    background-color: #000;
+    color: #FFF;
+}
+.root {
+    flex-direction: column;
+}
+#header {
+    justify-content: flex-start;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: rgb(0, 0, 0);
+    max-height: 4rem;
+}
+#coder {
+    padding: 1rem auto auto auto;
+    padding-right: 2rem;
+    flex: 1;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    text-align: end;
+}
+h3 {
+    margin: auto 1em 0 1rem;
+    border-bottom: .5px solid var(--base-color);
+    border-radius: 3px;
+    padding: .5em;
+    color: #FFF;
+    text-align: center;
+}
+nav {
+    flex: 3;
+    align-self: center;
+    justify-content: space-between;
+    height: 4rem;
+}
+#menu {
+    margin-left: 1rem;
+    display: none;
+}
+nav ul {
+    margin: 0;
+    padding: 0 1em;
+    list-style: none;
+    transition: all .5s;
+}
+.show-menu {
+    transform: translateX(0);
+}
+nav li {
+    padding: 0 1rem;
+}
+nav ul li a {
+    margin: 0;
+    padding: 0 1rem;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li a:hover {
+    background-color: var(--secondary-color-one);
+}
+nav ul li a span {
+    margin: 0;
+    padding-left: .25rem;
+}
+main {
+    margin : 53px 0 0 0;
+}
+#main-intro {
+    margin: 0 auto;
+    padding: 0;
+    letter-spacing: 2px;
+    text-align: center;
+}
+#main-h1 {
+    margin-top: 0;
+    font-size: 7rem;
+    text-align: center;
+    color: lightgray;
+}
+#main-intro h1 strong {
+    color: var(--secondary-color-two);
+}
+#main-intro p {
+    padding-bottom: 0;
+    font-weight: bold;
+}
+#main-intro p {
+    margin: 0 .3em;
+    padding-bottom: 2em;
+    font-size: 1.3rem;
+    text-align: center;
+    color: lightgray;
+}
+#main-intro button {
+    margin: 1.5em auto;
+    border: none;
+    border-radius: 6px;
+    padding: 1rem 2rem;
+    font-size: 1.15rem;
+    background-color: var(--secondary-color-one);
+    cursor: pointer;
+}
+#main-intro button:hover {
+    background: var(--dark-blue);
+}
+#main-intro a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+/* Expertise */
+#expertise {
+    margin: 0 1rem;
+    height: 85vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.925), rgba(0, 0, 0, 0.925)), url('./img/general/code.png');
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#expertise-title {
+    height: 0;
+    font-size: 4rem;
+    text-align: center;
+}
+#expertise-areas {
+    flex-wrap: wrap;
+}
+.expertise-area {
+    margin-top: 2rem;
+    padding: 2.5rem 2rem 0 2rem;
+    flex-direction: column;
+    flex: 1;
+    min-width: 250px;
+    width: 350px;
+    max-width: 350px;
+    min-height: 13rem;
+}
+.expertise-area-title, .expertise-area-content {
+    flex-direction: row;
+}
+.expertise-area-title h2 {
+    margin: 0;
+}
+.expertise-area-title h2 {
+    margin-left: 1rem;
+}
+.expertise-area-title-1 {
+    border-bottom: 3px solid rgb(255, 183, 0);
+}
+.expertise-area-title-2 {
+    border-bottom: 3px solid rgb(193, 0, 161);
+}
+.expertise-area-title-3 {
+    border-bottom: 3px solid var(--base-color);
+}
+.expertise-area-content {
+    margin-top: 2rem;
+}
+.expertise-area-content div {
+    height: 90%;
+    color: gray;
+}
+.expertise-area-content p {
+    padding-top: 1rem;
+    letter-spacing: 1.5px;
+    line-height: 1.5rem;
+    color: rgb(220, 220, 220);
+}
+#frontend-dev-icon {
+    width: 36px;
+}
+.horizontal-line {
+    width: 1px;
+    height: 70%;
+    background-color: gray;
+}
+
+/* Projects */
+#projects {
+    margin-bottom: 0;
+    padding: .5em 1em;
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-size: 3rem;
+}
+section {
+    padding: 2em 0;
+}
+.single-project {
+    border-radius: 6px;
+    background-color: rgb(15, 15, 15);
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+#go-up-button {
+    display: none;
+    position: fixed;
+    right: 30px;
+}
+#go-up-icon {
+    width: 48px;
+}
+.animation-icon {
+    animation: muevete 1s 2s;
+}
+/* Slider */
+.slider {
+     margin: auto;
+     width: 95%;
+     overflow: hidden;
+}
+.slider ul {
+    padding: 0;
+    width: 400%;
+    animation: cambio 50s infinite alternate ease-in-out;
+}
+.slider ul li {
+	width: 100%;
+	list-style: none;
+}
+.slider li img {
+	width: 100%;
+}
+
+/* Footer */
+footer {
+    margin: 0 auto;
+    border-top: .1px solid #FFF;
+    background: rgb(10, 10, 10);
+}
+footer a {
+    width: 100%;
+    color: #FFF;
+    text-decoration: none;
+}
+address p {
+    text-align: center;
+}

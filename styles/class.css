@@ -1,0 +1,17 @@
+.container {
+    margin: 0 auto;
+    max-width: 1320px;
+    height: 100vh;
+}
+.flex {
+    display: flex;
+}
+.flex-d-column {
+    flex-direction: column;
+}
+.align-i-center {
+    align-items: center;
+}
+.justify-c-center {
+    justify-content: center;
+}
