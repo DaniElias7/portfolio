@@ -8,26 +8,21 @@ body {
     margin: 0;
     font-family: Arial;
     overflow-x: hidden;
-    background-color: #000;
+    background-color: rgb(9, 15, 21); /* I like this backgroundColor*/
     color: #FFF;
 }
-.root {
-    flex-direction: column;
-}
 #header {
-    justify-content: flex-start;
-    width: 100%;
     position: fixed;
     top: 0;
-    right: 0;
     left: 0;
     background: rgb(0, 0, 0);
+    width: 100%;
     max-height: 4rem;
 }
 #coder {
+    margin-right: 3rem;
     padding: 1rem auto auto auto;
-    padding-right: 2rem;
-    flex: 1;
+    flex: 3;
     height: 100%;
     color: rgb(255, 255, 255);
     text-align: end;
@@ -57,7 +52,10 @@ nav ul {
     transition: all .5s;
 }
 .show-menu {
-    transform: translateX(0);
+    transform: translateX(100%);
+}
+nav ul {
+    height: 100%;
 }
 nav li {
     padding: 0 1rem;
@@ -65,13 +63,14 @@ nav li {
 nav ul li a {
     margin: 0;
     padding: 0 1rem;
-    width: 100%;
     height: 100%;
+    width: 100%;
     list-style: none;
     text-decoration: none;
     color: #fff;
 }
 nav ul li a:hover {
+    height: 100%;
     background-color: var(--secondary-color-one);
 }
 nav ul li a span {
@@ -79,13 +78,15 @@ nav ul li a span {
     padding-left: .25rem;
 }
 main {
-    margin : 53px 0 0 0;
+    margin : 53px auto;
 }
 #main-intro {
-    margin: 0 auto;
-    padding: 0;
+    margin: -4.5rem auto;
+    padding: 0 1rem;
     letter-spacing: 2px;
     text-align: center;
+    max-width: 100%;
+    background-color: rgb(9, 15, 21);
 }
 #main-h1 {
     margin-top: 0;
@@ -126,8 +127,9 @@ main {
 
 /* Expertise */
 #expertise {
-    margin: 0 1rem;
-    height: 85vh;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+    width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.925), rgba(0, 0, 0, 0.925)), url('./img/general/code.png');
 
     /* Position and center the image to scale nicely on all screens */
@@ -144,22 +146,27 @@ main {
     flex-wrap: wrap;
 }
 .expertise-area {
+    margin: 0 auto;
     margin-top: 2rem;
-    padding: 2.5rem 2rem 0 2rem;
+    padding: 0 2rem;
+    padding-top: 1rem;
     flex-direction: column;
     flex: 1;
     min-width: 250px;
-    width: 350px;
     max-width: 350px;
-    min-height: 13rem;
+    height: 20rem;
 }
 .expertise-area-title, .expertise-area-content {
     flex-direction: row;
 }
-.expertise-area-title h2 {
-    margin: 0;
+.expertise-area-content {
+    padding: 0 1rem;
+}
+.expertise-icon {
+    margin-right: 1rem;
 }
 .expertise-area-title h2 {
+    margin: 0;
     margin-left: 1rem;
 }
 .expertise-area-title-1 {
@@ -173,13 +180,16 @@ main {
 }
 .expertise-area-content {
     margin-top: 2rem;
+    width: 100%;
 }
 .expertise-area-content div {
-    height: 90%;
+    width: 1px;
+    height: 100%;
     color: gray;
 }
 .expertise-area-content p {
     padding-top: 1rem;
+    margin-left: 1rem;
     letter-spacing: 1.5px;
     line-height: 1.5rem;
     color: rgb(220, 220, 220);
@@ -188,25 +198,29 @@ main {
     width: 36px;
 }
 .horizontal-line {
-    width: 1px;
-    height: 70%;
+    width: 3px;
+    height: 170%;
     background-color: gray;
 }
 
 /* Projects */
 #projects {
-    margin-bottom: 0;
-    padding: .5em 1em;
+    margin: 0 auto;
+    margin-top: 4rem;
+    padding: .5em auto;
     text-align: center;
     letter-spacing: 1.5px;
     font-size: 3rem;
+    width: 100%;
 }
 section {
     padding: 2em 0;
 }
 .single-project {
+    margin: 0 auto;
     border-radius: 6px;
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(20, 20, 20);
+    max-width: 90%;
 }
 img {
     max-width: 100%;
@@ -245,11 +259,15 @@ img {
 /* Footer */
 footer {
     margin: 0 auto;
-    border-top: .1px solid #FFF;
+    padding-top: 2rem;
     background: rgb(10, 10, 10);
+    max-width: 100%;
+}
+.networks {
+    width: 100%;
+    max-width: 500px;
 }
 footer a {
-    width: 100%;
     color: #FFF;
     text-decoration: none;
 }

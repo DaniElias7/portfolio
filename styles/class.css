@@ -1,6 +1,6 @@
 .container {
     margin: 0 auto;
-    max-width: 1320px;
+    width: 100vw;
     height: 100vh;
 }
 .flex {
@@ -14,4 +14,18 @@
 }
 .justify-c-center {
     justify-content: center;
+}
+.justify-c-space-b {
+    justify-content: space-between;
+}
+.screen {
+    height: calc(100vh - 64px);
+}
+.mg-b-3 {
+    margin-bottom: 3rem;
+}
+/* Icon */
+.expertise-icon {
+    width: 32px;
+    height: 32px;
 }
