@@ -63,7 +63,7 @@
     }
     #projects-container {
         display: flex;
-        margin: 0 2rem;
+        margin: 0;
     }
     section, #projects-container {
         flex-wrap: wrap;
@@ -112,7 +112,7 @@
         display: flex;
      }
      footer {
-         padding: 0 25%;
+         padding: 2rem 25%;
      }
 }
 @media screen and ( min-width: 2000px ) {
@@ -124,4 +124,13 @@
 		margin: auto 8vw;
 	}
 
+}
+
+
+
+
+@media (prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
 }
